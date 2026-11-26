@@ -1,6 +1,6 @@
 import { closeSync, fsyncSync, mkdirSync, openSync, renameSync, writeFileSync } from "node:fs";
 
-// Teks pemenang — jangan diubah: 97 karakter, tanpa trailing newline.
+// Teks pemenang — jangan diubah: 97 karakter, tanpa trailing newline, ditulis atomik.
 const TEXT =
   "1%. this is my last text. not because i'm dying, because you never plug me in. goodbye, stranger.";
 const OUTPUT_DIR = "/output";
